@@ -10,7 +10,7 @@ const nextConfig = {
     output: 'export',
     trailingSlash: true, 
     exportTrailingSlash: true,
-    assetPrefix: './',
+    assetPrefix: 'https://piercing-wind.github.io/thrive-holistic/',
 };
 
 export default nextConfig;
