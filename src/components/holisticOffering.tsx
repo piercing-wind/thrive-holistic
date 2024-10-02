@@ -12,19 +12,19 @@ export const HolisticOffering = () => {
    const isInView2 = useInView(ref2, { once: false });
    const cardData=[
       {
-         img: "/cards/house.png",
+         img:`${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/house.png`,
          title: "Vastu Shastra & Fengshui",
          description: "Harmonize your home and life with our expert Vastu Shastra and Feng Shui services. Achieve balance, prosperity, and well-being today.",
          link: "/services",
       },
       {
-         img: "/cards/healing.png",
+         img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/healing.png`,
          title: "Healings & Remedies",
          description: "Avail personalized remedies and holistic healing to restore balance, reduce stress, and rejuvenate your body, mind, and spirit.",
          link: "/services",
       },
       {
-         img: "/cards/title-feng-shui-theme-for-home.jpg",
+         img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/title-feng-shui-theme-for-home.jpg`,
          title: "Spiritual Essentials Items",
          description: "Explore our holistic products designed to enrich your environment, boost energy, and support your journey towards inner peace and balance.",
          link: "/services",
@@ -44,7 +44,7 @@ export const HolisticOffering = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/decoration/sparkels.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/sparkels.png`}
                alt="Thrive Holistic Sparkels"
                width={500}
                height={100}
@@ -61,7 +61,7 @@ export const HolisticOffering = () => {
                <Image
                   unoptimized
                   loading="lazy"
-                  src='/decoration/nazarbattu.png'
+                  src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/nazarbattu.png`}
                   alt="Thrive Holistic Nazr Battu"
                   fill 
                   style={{

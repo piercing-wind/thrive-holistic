@@ -78,7 +78,7 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
 export const Services=()=>{
    const servicesList=[
       {
-         image: '/vastuShastra.jpg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/vastuShastra.jpg`,
          title: 'Vastu & Fengshui',
          description: 'Transform your space with Vastu and Feng Shui to enhance harmony, attract positive energy, and foster prosperity.',
          price: '₹ 5550 /- Hour',
@@ -86,7 +86,7 @@ export const Services=()=>{
          style: 'horizontal'
        },
        {
-         image: '/services/card-reading.png',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/card-reading.png`,
          title: 'Card Reading',
          description: "Unlock your future with Tarot readings that provide deep insights, guidance, and clarity for life's journey.",
          price: '₹ 5550 /- Hour',
@@ -94,7 +94,7 @@ export const Services=()=>{
          style: 'horizontal'
        },
        {
-         image: '/services/meditation.jpg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/meditation.jpg`,
          title: 'Meditation',
          description: "Discover inner peace and balance with guided meditation sessions tailored to your needs.",
          price: '₹ 5550 /- Hour',
@@ -102,7 +102,7 @@ export const Services=()=>{
          style: ''
        },
        {
-         image: '/services/relationship-healing.jpg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/relationship-healing.jpg`,
          title: 'Relationship Healing',
          description: "Nurture deeper connections and resolve conflicts with gentle healing sessions aimed at restoring harmony and balance in your relationships.",
          price: '₹ 5550 /- Hour',
@@ -110,7 +110,7 @@ export const Services=()=>{
          style: ''
        },
        {
-         image: '/services/healing.jpg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/healing.jpg`,
          title: 'Healing',
          description: "Restore inner balance and well-being with spiritual healing sessions that nurture your mind, body, and spirit.",
          price: '₹ 5550 /- Hour',
@@ -118,7 +118,7 @@ export const Services=()=>{
          style: ''
        },
        {
-         image: '/services/vedic-astrology.jpeg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/vedic-astrology.jpeg`,
          title: 'Vedic Astrology',
          description: "Gain clarity and direction through the ancient wisdom of Vedic astrology, guided by the stars and planets.",
          price: '₹ 5550 /- Hour',
@@ -126,7 +126,7 @@ export const Services=()=>{
          style: ''
        },
        {
-         image: '/services/counseling.png',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/counseling.png`,
          title: 'Counsellings',
          description: "Get caring support and guidance to help you navigate challenges, make decisions, and find clarity in your life.",
          price: '₹ 5550 /- Hour',
@@ -134,7 +134,7 @@ export const Services=()=>{
          style: ''
        },
        {
-         image: '/services/predictions.jpg',
+         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/predictions.jpg`,
          title: 'Predictions',
          description: "Uncover what the future holds with insightful predictions to guide your decisions and life choices.",
          price: '₹ 5550 /- Hour',

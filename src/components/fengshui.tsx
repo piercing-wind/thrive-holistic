@@ -32,7 +32,7 @@ export const Fengshui = () => {
             <Image
               unoptimized
               loading="lazy"
-              src="/decoration/riboon.png"
+              src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/riboon.png`}
               alt="Thrive Holistic Ribbons"
               height={200}
               width={50}
@@ -48,7 +48,7 @@ export const Fengshui = () => {
             <Image
               unoptimized
               loading="lazy"
-              src="/decoration/riboon.png"
+              src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/riboon.png`}
               alt="Thrive Holistic Ribbons"
               height={120}
               width={30}
@@ -66,7 +66,7 @@ export const Fengshui = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/fengshui-bagua.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/fengshui-bagua.png`}
                alt="Thrive Holistic Vastu Shastra Card"
                fill
                className="-z-10"
@@ -84,7 +84,7 @@ export const Fengshui = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/fengshuiCard.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/fengshuiCard.png`}
                alt="Thrive Holistic Vastu Shastra Card"
                fill
                className="-z-10"

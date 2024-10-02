@@ -98,7 +98,7 @@ export const WhyChooseUs = () => {
 
       <div className="md:w-[70%] mx-auto relative mt-20 flex items-center justify-center">
          <Image
-            src='/whyusbg.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/whyusbg.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive holistic Why Choose Us"
@@ -110,7 +110,7 @@ export const WhyChooseUs = () => {
             }}
          />
          <Image
-            src='/tree.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tree.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive holistic Why Choose Us Tree"
@@ -127,7 +127,7 @@ export const WhyChooseUs = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/iso/ISOOuter.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/iso/ISOOuter.png`}
                alt="Thrive holistic ISO Certified"
                fill
                style={{
@@ -138,7 +138,7 @@ export const WhyChooseUs = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/iso/ISOInner.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/iso/ISOInner.png`}
                alt="Thrive holistic ISO Certified"
                fill
                style={{

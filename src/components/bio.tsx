@@ -12,7 +12,7 @@ export const Bio=()=>{
                <Image
                   unoptimized
                   loading="lazy"
-                  src="/halo.png"
+                  src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/halo.png`}
                   alt="Thrive Holistic Halo for Haridya Mahajan" 
                   fill
                   style={{
@@ -47,7 +47,7 @@ export const Bio=()=>{
                <Image
                   unoptimized
                   loading="lazy"
-                  src="/halo.png"
+                  src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/halo.png`}
                   alt="Thrive Holistic Halo for Haridya Mahajan" 
                   fill
                   style={{

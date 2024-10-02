@@ -21,7 +21,7 @@ export const TarrotGuidance = () => {
          </div>
          <div className="flex-shrink-0 h-96 w-96 relative">
            <Image
-            src= '/tarot/tarotOuter.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotOuter.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"
@@ -32,7 +32,7 @@ export const TarrotGuidance = () => {
             className="rotateSun"
            />
            <Image
-            src='/tarot/tarotMiddle.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotMiddle.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"
@@ -42,7 +42,7 @@ export const TarrotGuidance = () => {
             }}
            />
            <Image
-            src='/tarot/tarotInner.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotInner.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"

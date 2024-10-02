@@ -4,7 +4,6 @@ const nextConfig = {
     basePath: '/thrive-holistic',
     output: 'export',
     trailingSlash: true, 
-    exportTrailingSlash: true,
     assetPrefix: 'https://piercing-wind.github.io/thrive-holistic/',
 };
 

@@ -7,7 +7,7 @@ export const MakingLivesbetterSection = () => {
    return(
       <section className="w-[95%] xl:w-[80%] mx-auto relative mt-24 flex gap-y-24 flex-col md:flex-row items-center justify-between pt-40 pb-14 px-10">
          <Image
-            src= '/decoration/stars.png'
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/stars.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive Holistic stars"

@@ -26,7 +26,7 @@ export default function Home() {
             <Image
                unoptimized
                loading="lazy"
-               src='/decoration/clouds.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/clouds.png`}
                alt="Thrive Holistic clouds"
                height={700}
                width={700}
@@ -34,7 +34,7 @@ export default function Home() {
             <Image
                unoptimized
                loading="lazy"
-               src='/decoration/clouds2.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/clouds2.png`}
                alt="Thrive Holistic clouds"
                height={700}
                width={700}
@@ -68,7 +68,7 @@ export default function Home() {
                   <Image
                      unoptimized
                      loading="lazy"
-                     src='/sun.png'
+                     src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/sun.png`}
                      alt="Thrive Holistic sun"
                      fill
                      style={{
@@ -100,7 +100,7 @@ export default function Home() {
                         <Image
                            unoptimized
                            loading="lazy"
-                           src="/pintrestmedia.png"
+                           src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/pintrestmedia.png`}
                            alt="Thrive Holistic pintrest"
                            fill
                            style={{

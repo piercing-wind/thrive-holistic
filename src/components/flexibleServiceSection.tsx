@@ -44,7 +44,7 @@ export const FlexibleServiceSection = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/business-woman.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/business-woman.png`}
                alt="Thrive Holistic Online Services"
                fill
                style={{
@@ -65,7 +65,7 @@ export const FlexibleServiceSection = () => {
             <Image
               unoptimized
               loading="lazy"
-              src='/offlineWork.png'
+              src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/offlineWork.png`}
               alt="Thrive Holistic Online Services"
                fill
                style={{
@@ -86,7 +86,7 @@ export const FlexibleServiceSection = () => {
             <Image
                unoptimized
                loading="lazy"
-               src='/onsite.png'
+               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/onsite.png`}
                alt="Thrive Holistic Online Services"
                fill
                style={{

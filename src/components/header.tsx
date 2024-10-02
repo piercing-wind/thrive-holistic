@@ -37,7 +37,7 @@ export const Header = () => {
      <Link href='/' className="flex items-center gap-4">
         <div className="relative h-14 w-14">
           <Image
-            src="/thriveHolisticLogoCircle.png"
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/thriveHolisticLogoCircle.png`}
             unoptimized 
             loading="lazy"
             alt="Thrive Holistic Logo"
@@ -51,7 +51,7 @@ export const Header = () => {
           <Image
             loading="lazy"
             unoptimized
-            src="/thriveHolisticLogo.png"
+            src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/thriveHolisticLogo.png`}
             alt="Thrive Holistic Logo"
             fill
             style={{

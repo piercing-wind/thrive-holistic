@@ -13,27 +13,27 @@
 //         description: "",
 //         thumbnails: {
 //           default: {
-//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/default.jpg",
+//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/default.jpg`},
 //             width: 120,
 //             height: 90,
 //           },
 //           medium: {
-//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/mqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/mqdefault.jpg`},
 //             width: 320,
 //             height: 180,
 //           },
 //           high: {
-//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/hqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/hqdefault.jpg`},
 //             width: 480,
 //             height: 360,
 //           },
 //           standard: {
-//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/sddefault.jpg",
+//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/sddefault.jpg`},
 //             width: 640,
 //             height: 480,
 //           },
 //           maxres: {
-//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/maxresdefault.jpg",
+//             url: "https://i.ytimg.com/vi/BeBwie9bkZk/maxresdefault.jpg`},
 //             width: 1280,
 //             height: 720,
 //           },
@@ -57,27 +57,27 @@
 //         description: "",
 //         thumbnails: {
 //           default: {
-//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/default.jpg",
+//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/default.jpg`},
 //             width: 120,
 //             height: 90,
 //           },
 //           medium: {
-//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/mqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/mqdefault.jpg`},
 //             width: 320,
 //             height: 180,
 //           },
 //           high: {
-//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/hqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/hqdefault.jpg`},
 //             width: 480,
 //             height: 360,
 //           },
 //           standard: {
-//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/sddefault.jpg",
+//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/sddefault.jpg`},
 //             width: 640,
 //             height: 480,
 //           },
 //           maxres: {
-//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/maxresdefault.jpg",
+//             url: "https://i.ytimg.com/vi/jdLICHpC7Lg/maxresdefault.jpg`},
 //             width: 1280,
 //             height: 720,
 //           },
@@ -101,27 +101,27 @@
 //         description: "",
 //         thumbnails: {
 //           default: {
-//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/default.jpg",
+//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/default.jpg`},
 //             width: 120,
 //             height: 90,
 //           },
 //           medium: {
-//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/mqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/mqdefault.jpg`},
 //             width: 320,
 //             height: 180,
 //           },
 //           high: {
-//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/hqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/hqdefault.jpg`},
 //             width: 480,
 //             height: 360,
 //           },
 //           standard: {
-//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/sddefault.jpg",
+//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/sddefault.jpg`},
 //             width: 640,
 //             height: 480,
 //           },
 //           maxres: {
-//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/maxresdefault.jpg",
+//             url: "https://i.ytimg.com/vi/yo8CTpH_70A/maxresdefault.jpg`},
 //             width: 1280,
 //             height: 720,
 //           },
@@ -145,27 +145,27 @@
 //         description: "",
 //         thumbnails: {
 //           default: {
-//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/default.jpg",
+//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/default.jpg`},
 //             width: 120,
 //             height: 90,
 //           },
 //           medium: {
-//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/mqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/mqdefault.jpg`},
 //             width: 320,
 //             height: 180,
 //           },
 //           high: {
-//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/hqdefault.jpg",
+//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/hqdefault.jpg`},
 //             width: 480,
 //             height: 360,
 //           },
 //           standard: {
-//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/sddefault.jpg",
+//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/sddefault.jpg`},
 //             width: 640,
 //             height: 480,
 //           },
 //           maxres: {
-//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/maxresdefault.jpg",
+//             url: "https://i.ytimg.com/vi/uLWIXN4mYJM/maxresdefault.jpg`},
 //             width: 1280,
 //             height: 720,
 //           },
