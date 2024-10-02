@@ -1,0 +1,14 @@
+image: node:20
+
+pages:
+  script:
+    - npm install -g pnpm
+    - pnpm install
+    - pnpm run build
+    - pnpm run export
+    - mv out public  # GitLab Pages expects files in the 'public' folder
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
