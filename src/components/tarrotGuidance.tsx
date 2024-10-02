@@ -21,7 +21,9 @@ export const TarrotGuidance = () => {
          </div>
          <div className="flex-shrink-0 h-96 w-96 relative">
            <Image
-            src='/tarot/tarotOuter.png'
+            src= '/tarot/tarotOuter.png'
+            unoptimized 
+            loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"
             fill
             style={{
@@ -31,6 +33,8 @@ export const TarrotGuidance = () => {
            />
            <Image
             src='/tarot/tarotMiddle.png'
+            unoptimized 
+            loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"
             fill
             style={{
@@ -39,6 +43,8 @@ export const TarrotGuidance = () => {
            />
            <Image
             src='/tarot/tarotInner.png'
+            unoptimized 
+            loading="lazy"
             alt="Thrive Holistic Tarrot Guidance"
             fill
             style={{

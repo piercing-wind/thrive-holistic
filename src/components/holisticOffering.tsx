@@ -42,6 +42,8 @@ export const HolisticOffering = () => {
 
           >
             <Image
+               unoptimized
+               loading="lazy"
                src='/decoration/sparkels.png'
                alt="Thrive Holistic Sparkels"
                width={500}
@@ -57,6 +59,8 @@ export const HolisticOffering = () => {
           >
             <div className=" relative h-40 w-8 md:h-80 md:w-16">
                <Image
+                  unoptimized
+                  loading="lazy"
                   src='/decoration/nazarbattu.png'
                   alt="Thrive Holistic Nazr Battu"
                   fill 

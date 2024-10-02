@@ -24,12 +24,16 @@ export default function Home() {
          <section className="w-full relative h-[70vh] flex my-10 mb-20 items-start md:items-center ">
          <Marquee className="absolute z-10 -bottom-56 md:bottom-auto md:top-0 left-0 h-full w-full gap-0 [--gap:0rem]  ">
             <Image
+               unoptimized
+               loading="lazy"
                src='/decoration/clouds.png'
                alt="Thrive Holistic clouds"
                height={700}
                width={700}
             />
             <Image
+               unoptimized
+               loading="lazy"
                src='/decoration/clouds2.png'
                alt="Thrive Holistic clouds"
                height={700}
@@ -62,6 +66,8 @@ export default function Home() {
             <div className="absolute -bottom-[15rem] sm:-bottom-[70%] left-14 sm:left-[15%] md:left-auto md:bottom-auto md:top-0 md:-right-64 ">
                <div className="relative h-[20rem] w-[20rem] sm:h-[34rem] sm:w-[34rem] md:h-[30rem] md:w-[30rem] lg:h-[34rem] lg:w-[34rem] flex flex-col md:flex-row items-center  ">
                   <Image
+                     unoptimized
+                     loading="lazy"
                      src='/sun.png'
                      alt="Thrive Holistic sun"
                      fill
@@ -92,6 +98,8 @@ export default function Home() {
                   <div className="relative w-[23.5rem] sm:w-[40rem] mb-auto md:mb-0 md:h-[36rem] lg:h-[40rem] flex flex-row md:flex-col justify-between md:w-full flex-grow md:mr-auto  z-10">
                      <Link href="" className="relative h-8 w-8">
                         <Image
+                           unoptimized
+                           loading="lazy"
                            src="/pintrestmedia.png"
                            alt="Thrive Holistic pintrest"
                            fill

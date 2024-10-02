@@ -42,8 +42,10 @@ export const FlexibleServiceSection = () => {
             className="h-80 w-80 relative"
           >
             <Image
-              src='/business-woman.png'
-              alt="Thrive Holistic Online Services"
+               unoptimized
+               loading="lazy"
+               src='/business-woman.png'
+               alt="Thrive Holistic Online Services"
                fill
                style={{
                   objectFit: "cover",
@@ -61,6 +63,8 @@ export const FlexibleServiceSection = () => {
             className="h-80 w-80 relative"
           >
             <Image
+              unoptimized
+              loading="lazy"
               src='/offlineWork.png'
               alt="Thrive Holistic Online Services"
                fill
@@ -80,8 +84,10 @@ export const FlexibleServiceSection = () => {
             className="h-80 w-80 relative"
           >
             <Image
-              src='/onsite.png'
-              alt="Thrive Holistic Online Services"
+               unoptimized
+               loading="lazy"
+               src='/onsite.png'
+               alt="Thrive Holistic Online Services"
                fill
                style={{
                   objectFit: "cover",

@@ -28,6 +28,8 @@ export const VastuShastra = () => {
             className="absolute top-0 -right-16"
           >
             <Image
+              unoptimized
+              loading="lazy"
               src="/decoration/toran.png"
               alt="Thrive Holistic Flowers"
               height={200}
@@ -43,6 +45,8 @@ export const VastuShastra = () => {
             className="absolute top-0 -left-16"
           >
             <Image
+              unoptimized
+              loading="lazy"
               src="/decoration/toran.png"
               alt="Thrive Holistic Flowers"
               height={120}
@@ -59,6 +63,8 @@ export const VastuShastra = () => {
                 transition={{ duration: 1 }}
             >
             <Image
+               unoptimized
+               loading="lazy"
                src='/vastushastracard.png'
                alt="Thrive Holistic Vastu Shastra Card"
                fill
@@ -79,6 +85,8 @@ export const VastuShastra = () => {
                 transition={{ duration: 1 }}
             >
             <Image
+               unoptimized
+               loading="lazy"
                src='/vastuShastra.jpg'
                alt="Thrive Holistic Vastu Shastra Card"
                fill

@@ -99,6 +99,8 @@ export const WhyChooseUs = () => {
       <div className="md:w-[70%] mx-auto relative mt-20 flex items-center justify-center">
          <Image
             src='/whyusbg.png'
+            unoptimized 
+            loading="lazy"
             alt="Thrive holistic Why Choose Us"
             fill
             style={{
@@ -109,6 +111,8 @@ export const WhyChooseUs = () => {
          />
          <Image
             src='/tree.png'
+            unoptimized 
+            loading="lazy"
             alt="Thrive holistic Why Choose Us Tree"
             width={550} // Set the width of the image
             height={80}
@@ -121,6 +125,8 @@ export const WhyChooseUs = () => {
          />
          <div className="absolute top-4 md:top-0 -right-2 md:right-8 h-20 w-20 md:h-28 md:w-28">
             <Image
+               unoptimized
+               loading="lazy"
                src='/iso/ISOOuter.png'
                alt="Thrive holistic ISO Certified"
                fill
@@ -130,6 +136,8 @@ export const WhyChooseUs = () => {
                className="rotateSun"
             />
             <Image
+               unoptimized
+               loading="lazy"
                src='/iso/ISOInner.png'
                alt="Thrive holistic ISO Certified"
                fill

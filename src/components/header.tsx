@@ -38,6 +38,8 @@ export const Header = () => {
         <div className="relative h-14 w-14">
           <Image
             src="/thriveHolisticLogoCircle.png"
+            unoptimized 
+            loading="lazy"
             alt="Thrive Holistic Logo"
             fill
             style={{
@@ -47,6 +49,8 @@ export const Header = () => {
         </div>
         <div className="relative h-20 w-56">
           <Image
+            loading="lazy"
+            unoptimized
             src="/thriveHolisticLogo.png"
             alt="Thrive Holistic Logo"
             fill

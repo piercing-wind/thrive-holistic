@@ -29,6 +29,8 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
             transition={{ duration: 1 }}
          >
             <Image
+               unoptimized
+               loading="lazy"
                src={image}
                alt={`Thrive Holistic ${title}`}
                fill

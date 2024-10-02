@@ -26,6 +26,8 @@ const WorkshopAndCourseCard = ({ image, title, description, link }: { image: str
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         <Image
+          unoptimized
+          loading="lazy"
           src={image}
           alt="Thrive Holistic Workshop and Courses"
           fill

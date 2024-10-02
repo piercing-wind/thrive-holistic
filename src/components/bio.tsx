@@ -10,6 +10,8 @@ export const Bio=()=>{
       <section className="w-[95%] xl:w-[80%] flex flex-col md:flex-row items-center justify-between mx-auto mt-28 pt-10 mb-20">
          <div className="relative h-96 w-96  flex-shrink-0 flex items-center justify-center md:hidden">
                <Image
+                  unoptimized
+                  loading="lazy"
                   src="/halo.png"
                   alt="Thrive Holistic Halo for Haridya Mahajan" 
                   fill
@@ -43,6 +45,8 @@ export const Bio=()=>{
          </div>
               <div className="relative h-96 w-96 flex-shrink-0 md:flex items-center justify-center hidden">
                <Image
+                  unoptimized
+                  loading="lazy"
                   src="/halo.png"
                   alt="Thrive Holistic Halo for Haridya Mahajan" 
                   fill

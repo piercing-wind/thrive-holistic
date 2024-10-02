@@ -47,6 +47,8 @@ export const OfferingCard = ({img, title, description, link}:{img : string, titl
         variants={imageVariants}
       >
         <Image
+          unoptimized
+          loading="lazy"
           src={img}
           alt="Thrive Holistic House"
           fill
