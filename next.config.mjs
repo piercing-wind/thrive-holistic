@@ -6,7 +6,7 @@ const nextConfig = {
     basePath: isProduction ? '/thrive-holistic' : '',
     output: 'export',
     trailingSlash: true, 
-    assetPrefix: isProduction ? 'https://piercing-wind.github.io/thrive-holistic/' : '',
+    assetPrefix: isProduction ? 'https://thriveholistic.in' : '',
 };
 
 
