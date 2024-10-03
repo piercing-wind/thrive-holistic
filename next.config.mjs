@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProduction = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     reactStrictMode: true,
-    basePath: '/thrive-holistic',
+    basePath: isProduction ? '/thrive-holistic' : '',
     output: 'export',
     trailingSlash: true, 
-    assetPrefix: 'https://piercing-wind.github.io/thrive-holistic/',
+    assetPrefix: isProduction ? 'https://piercing-wind.github.io/thrive-holistic/' : '',
 };
+
+
 
 export default nextConfig;

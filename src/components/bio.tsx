@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Bio=()=>{
    return(
       <section className="w-[95%] xl:w-[80%] flex flex-col md:flex-row items-center justify-between mx-auto mt-28 pt-10 mb-20">
-         <div className="relative h-96 w-96  flex-shrink-0 flex items-center justify-center md:hidden">
+         <div className="relative h-96 w-96  flex-shrink-0 flex items-center justify-center mb-8 md:hidden">
                <Image
                   unoptimized
                   loading="lazy"
@@ -30,7 +30,7 @@ export const Bio=()=>{
             word="Hridaya Mahajan"
             />
             <FadeText
-              className="text-xl italic w-[90%] flex my-4"
+              className="text-md italic w-[90%] flex mt-1 my-4"
               direction="up"
               framerProps={{
                 show: { transition: {duration: 0.8,  delay: 0.3 } },

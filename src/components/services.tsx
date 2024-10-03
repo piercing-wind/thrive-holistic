@@ -11,7 +11,8 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
    const isInView = useInView(ref, { once: false })
 
    const vertical = "w-[23rem] flex flex-col items-center justify-start rounded-3xl relative overflow-hidden"
-   const horizontal = "h-[18rem] w-full sm:h-[20rem] sm:w-[36rem] flex items-center justify-startw rounded-2xl relative overflow-hidden"
+   const horizontal = "h-[12rem] w-full sm:h-[20rem] sm:w-[36rem] flex items-center justify-startw rounded-2xl relative overflow-hidden"
+   const isHorizontal = style === 'horizontal'
 
    return(
       <motion.div 
@@ -58,18 +59,18 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
             </motion.span> 
          : ''}
          <motion.div 
-            className={`py-4 ${style === 'horizontal' ? 'px-4' : 'px-8'}  flex flex-col items-start justify-start gap-y-4`}
+            className={`py-4 ${style === 'horizontal' ? 'px-4 gap-y-2' : 'px-8 gap-y-4'}  flex flex-col items-start justify-start sm:gap-y-4`}
             initial={{ opacity: 0, y: 100 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.3 }}
          >
             <h4 className="font-bold text-2xl">{title}</h4>
-            <TypingAnimation
-               className="text-base font-medium mb-4 text-left h-24"
+            <TypingAnimation  
+               className={`${isHorizontal ? 'text-xs' : 'text-base' } sm:text-base font-medium sm:mb-4 text-left sm:h-24`}
                text={description}
             />
             <span className="text-lg font-bold">{price}</span>
-            <Link href={link} target="_blank" className="bg-[#FFF622] py-2 w-full px-4 text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200"> Schedule Your Session </Link>
+            <Link href={link} target="_blank" className={`bg-[#FFF622] ${isHorizontal? 'py-1': 'py-2'} sm:py-2 w-full px-4  text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200`}> Schedule Your Session </Link>
          </motion.div>
       </motion.div>
    )
