@@ -17,9 +17,9 @@ interface VideoItem {
      resourceId: {
        videoId: string;
      };
+     channelTitle: string;
    };
  }
- 
 
 const fetchPlaylistVideos = async (playlistId: string, apiKey: string) => {
    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`;
@@ -55,7 +55,7 @@ const chunkArray = (array: VideoItem[], size: number) => {
    return chunkedArr;
  };
 
-const VideoCard = ({ video, videoTitle, src, onClick }: { video: any, videoTitle: string, src: string, onClick: () => void }) => {
+const VideoCard = ({ video, videoTitle, src, onClick }: { video: VideoItem, videoTitle: string, src: string, onClick: () => void }) => {
    return (
      <div className="w-72 h-64 border rounded-xl overflow-hidden cursor-custom-hover flex-shrink-0 m-2" onClick={onClick}
         style={{ boxShadow: "0px 0px 10px 2px rgba(255, 215, 0, 1)" }}
@@ -95,14 +95,6 @@ export const YoutubeVideoCard = ({ playlistId, title }: { playlistId: string, ti
       fetchVideos();
    }, [playlistId]);
 
-   // const chunkArray = (array: any[], size: number) => {
-   //    const chunkedArr = [];
-   //    for (let i = 0; i < array.length; i += size) {
-   //      chunkedArr.push(array.slice(i, i + size));
-   //    }
-   //    return chunkedArr;
-   // };
-
    const videoChunks = chunkArray(videos, 8);
 
    const handleOpenModal = (src: string) => {
@@ -120,7 +112,7 @@ export const YoutubeVideoCard = ({ playlistId, title }: { playlistId: string, ti
          {videoChunks.map((chunk, index) => (
             <div key={index} className="flex flex-wrap items-center">
                <Marquee reverse={index % 2 !== 0} className="gap-5" >
-                  {chunk.map((video: any) => (
+                  {chunk.map((video: VideoItem) => (
                      <VideoCard
                         key={video.snippet.resourceId.videoId}
                         video={video}
