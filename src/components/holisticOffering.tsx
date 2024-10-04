@@ -15,19 +15,19 @@ export const HolisticOffering = () => {
          img:`${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/house.png`,
          title: "Vastu Shastra & Fengshui",
          description: "Harmonize your home and life with our expert Vastu Shastra and Feng Shui services. Achieve balance, prosperity, and well-being today.",
-         link: "/services",
+         link: "/shop?index=1",
       },
       {
          img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/healing.png`,
          title: "Healings & Remedies",
          description: "Avail personalized remedies and holistic healing to restore balance, reduce stress, and rejuvenate your body, mind, and spirit.",
-         link: "/services",
+         link: "/shop?index=1",
       },
       {
          img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/hridayamahajan-card-reading.jpg`,
          title: "Card Reading",
          description: "Hridaya Mahajan's Tarot readings at Thrive Holistic offer accurate, personalized insights, providing clarity and guidance for life’s challenges.",
-         link: "/services",
+         link: "/shop?index=1",
       },
      ];
    return(

@@ -19,6 +19,11 @@ a:hover, .hover\:cursor-custom-hover:hover {
    cursor: url('/cursor-hover.png'), auto;
  }
 
+*:hover {
+  cursor: url('/cursor-hover.png'), auto;
+}
+ 
+
 @layer base {
   :root {
     --radius: 0.5rem;
