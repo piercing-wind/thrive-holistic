@@ -9,11 +9,13 @@ import { MakingLivesbetterSection } from "@/components/makingLivesBetterSection"
 import { TarrotGuidance } from "@/components/tarrotGuidance";
 import { FadeText } from "@/components/ui/fade-text";
 import Marquee from "@/components/ui/marquee";
+import OrbitingCircles from "@/components/ui/orbiting-circles";
 import TypingAnimation from "@/components/ui/typing-animation";
 import { UserReviewCard } from "@/components/userReviewCard";
 import { VastuShastra } from "@/components/vastuShastra";
 import { WhyChooseUs } from "@/components/whychooseus";
 import { userReviews } from "@/data/userReviews";
+import { LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,24 +24,7 @@ export default function Home() {
       <main className="w-full overflow-x-hidden">
          <Header/>
          <section className="w-full relative h-[70vh] flex my-10 mb-20 items-start md:items-center ">
-         <Marquee className="absolute z-10 -bottom-56 md:bottom-auto md:top-0 left-0 h-full w-full gap-0 [--gap:0rem]  ">
-            <Image
-               unoptimized
-               loading="lazy"
-               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/clouds.png`}
-               alt="Thrive Holistic clouds"
-               height={700}
-               width={700}
-            />
-            <Image
-               unoptimized
-               loading="lazy"
-               src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/decoration/clouds2.png`}
-               alt="Thrive Holistic clouds"
-               height={700}
-               width={700}
-            />
-         </Marquee>
+ 
             <div className="mx-2 sm:mx-8 lg:ml-20 md:w-[50%] flex flex-col items-start gap-4">
                <FadeText
                  className="font-medium text-lg -z-50 relative"
@@ -74,33 +59,34 @@ export default function Home() {
                      style={{
                         objectFit: "cover",
                      }}
-                     className="rotateSun -z-50"
+                     className=" -z-50"
                   />
-                  <Link href="" className="-mt-14 mb-4 md:mt-auto md:mb-auto md:-ml-14 md:mr-16 z-10">
+    
+                  <Link href="https://www.linkedin.com/in/hridaya-mahajan-b26120198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" className="-mt-14 mb-4 md:mt-auto md:mb-auto md:-ml-14 md:mr-16 z-10 animated_icon1 hover:cursor-custom-hover">
                         <Linkedin />
                   </Link>
                   <div className="relative w-[60%] mb-8 sm:mb-14 md:mb-auto md:w-auto md:h-[60%] my-auto flex md:flex-col justify-between md:-ml-16 md:mr-16  z-10">
-                     <Link href="">
+                     <Link href="https://x.com/MahajanHri38264" target="_blank" className="animated_icon2 hover:cursor-custom-hover">
                         <TwitterIcon />
                      </Link>
-                     <Link href="">
+                     <Link href="https://wa.me/919914939308?text=Hi%20Hridaya%2C%20I%20came%20from%20your%20website%20and%20I%20am%20interested%20in%20your%20services" target="_blank" className="animated_icon3 hover:cursor-custom-hover">
                         <WhatsAppIcon />
                      </Link>
                   </div>
                   <div className="relative w-[98%] mb-8 sm:mb-16 md:mb-auto md:w-auto md:h-[98%] my-auto flex md:flex-col justify-between md:mr-20  z-10">
-                     <Link href="">
+                     <Link href="https://www.facebook.com/share/7Ajd1vK5yKX1QyRP/?mibextid=LQQJ4d" target="_blank" className="animated_icon4 hover:cursor-custom-hover">
                         <Facebook />
                      </Link>
-                     <Link href="">
+                     <Link href="https://www.instagram.com/thrive__holistic/" target="_blank" className="animated_icon1 hover:cursor-custom-hover">
                         <InstagramIcon />
                      </Link>
                   </div>
-                  <div className="relative w-[23.5rem] sm:w-[40rem] mb-auto md:mb-0 md:h-[36rem] lg:h-[40rem] flex flex-row md:flex-col justify-between md:w-full flex-grow md:mr-auto  z-10">
-                     <Link href="" className="relative h-8 w-8">
+                  <div className="relative w-[23.5rem] sm:w-[40rem] mb-auto md:mb-0 md:h-[36rem] lg:h-[40rem] flex flex-row md:flex-col justify-between md:w-full flex-grow md:mr-auto  z-10 ">
+                     <Link href="https://pin.it/7zs3EQzVo" target="_blank" className="relative h-8 w-8 animated_icon2 hover:cursor-custom-hover">
                         <Image
                            unoptimized
                            loading="lazy"
-                           src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/pintrestmedia.png`}
+                           src="/pintrestmedia.png"
                            alt="Thrive Holistic pintrest"
                            fill
                            style={{
@@ -108,12 +94,13 @@ export default function Home() {
                            }}
                          />
                      </Link>
-                     <Link href="">
+                     <Link href="https://www.youtube.com/@Hridaya_mahajan" target="_blank" className="animated_icon3 hover:cursor-custom-hover">
                         <YoutubeIcon />
                      </Link>
                   </div>
 
                </div>
+
             </div>
          </section>
          <section className="w-full pt-32 mb-10 relative bg-white z-40">
@@ -130,6 +117,7 @@ export default function Home() {
                         name={user.name}
                         userName={user.userName}
                         // img={user.img}
+                        link={user.link}
                         review={user.review}
                      />
                   ))}

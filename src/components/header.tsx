@@ -34,7 +34,7 @@ export const Header = () => {
 
   return (
     <nav className="w-full py-4 flex items-center justify-between pl-4 sm:px-8 lg:px-16 mx-auto">
-     <Link href='/' className="flex items-center gap-4">
+     <Link href='/' className="flex items-center gap-4 hover:cursor-custom-hover">
         <div className="relative h-14 w-14">
           <Image
             src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/thriveHolisticLogoCircle.png`}
@@ -61,10 +61,10 @@ export const Header = () => {
         </div>
       </Link>
       <ul className="md:flex items-center gap-14 hidden">
-        <li><Link href="/shop?index=1">Services</Link></li>
-        <li><Link href="/shop?index=0">Shop</Link></li>
-        <li><Link href="/gallery">Gallery</Link></li>
-        <li><Link href="#">Blog</Link></li>
+        <li><Link className="hover:cursor-custom-hover" href="/shop?index=1">Services</Link></li>
+        <li><Link className="hover:cursor-custom-hover" href="/shop?index=0">Shop</Link></li>
+        <li><Link className="hover:cursor-custom-hover" href="/gallery">Gallery</Link></li>
+        {/* <li><Link className="hover:cursor-custom-hover" href="#">Blog</Link></li> */}
       </ul>
       <div className="flex items-center justify-center pr-2 md:hidden">
          <AlignLeft size={38} onClick={toggleMenu}/>
@@ -82,10 +82,10 @@ export const Header = () => {
            <X size={38} onClick={toggleMenu}/> 
          </div>
           <ul className="flex flex-col items-start gap-4">
-            <li><Link href="/shop?index=1">Services</Link></li>
-            <li><Link href="/shop?index=0" onClick={toggleMenu}>Shop</Link></li>
-            <li><Link href="/gallery" onClick={toggleMenu}>Gallery</Link></li>
-            <li><Link href="#" onClick={toggleMenu}>Blog</Link></li>
+            <li><Link className="hover:cursor-custom-hover" href="/shop?index=1">Services</Link></li>
+            <li><Link className="hover:cursor-custom-hover" href="/shop?index=0" onClick={toggleMenu}>Shop</Link></li>
+            <li><Link className="hover:cursor-custom-hover" href="/gallery" onClick={toggleMenu}>Gallery</Link></li>
+            {/* <li><Link className="hover:cursor-custom-hover" href="#" onClick={toggleMenu}>Blog</Link></li> */}
           </ul>
         </motion.div>
       )}

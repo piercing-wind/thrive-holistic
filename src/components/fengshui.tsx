@@ -94,7 +94,7 @@ export const Fengshui = () => {
             />
             <TypingAnimation
               className="text-lg font-medium text-left"
-              text="Feng Shui emphasizes the importance of light and water to create balance and harmony. Light enhances positive energy, while water promotes calmness and abundance, transforming your space into a peaceful sanctuary."
+              text="Feng Shui emphasizes the importance of light and water to create balance and harmony. Light enhances positive energy, while water promotes calmness and abundance, transforming your space into a peaceful sanctuary. Without any reconstruction or destoration."
             />
          </motion.div>
 

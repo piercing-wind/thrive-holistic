@@ -21,7 +21,19 @@ export const Bio=()=>{
                   }}
                   className="rotateSun"
                />
-               <User className="h-[65%] w-[65%]"/>
+            <div className="relative h-64 w-64 ml-2">
+               <Image
+                  unoptimized
+                  loading="lazy"
+                  src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/hridaya.png`}
+                  alt="Thrive Holistic Haridya Mahajan" 
+                  fill
+                  style={{
+                     objectFit: "contain",
+                     zIndex: -5
+                  }}
+               />
+               </div>
          </div>
 
          <div className="flex flex-col items-start justify-center w-[95%] md:w-[60%]">
@@ -35,11 +47,11 @@ export const Bio=()=>{
               framerProps={{
                 show: { transition: {duration: 0.8,  delay: 0.3 } },
               }}
-              text="Vastu & Feng Shui Expert, Healer, Astrologist & psychic"
+              text="Vastu + Feng Shui Expert, Healer, Astrologist, Card Reader & psychic"
             />
             <TypingAnimation
               className="text-xl font-medium text-start my-4"
-              text="Founder of Thrive Holistic, a holistic healer specializing in Vaastu, Feng Shui, therapy sessions, and energy healing, dedicated to fostering balance and well-being."
+              text="Founder of Thrive Holistic, a holistic healer specializing in Vastu, Feng Shui, energy healing, Crystal Healing, Predictions, Remedies, Card Reading, Counselling Sessions and much more... dedicated to fostering balance and well-being."
             />
             <Link href='' className="px-5 bg-yellow-50 shadow-md shadow-[#8900006d]  py-1 rounded-sm my-2 hover:scale-105 hover:bg-yellow-200 transition-all duration-150 flex items-center justify-center">Reach Me</Link>
          </div>
@@ -56,7 +68,19 @@ export const Bio=()=>{
                   }}
                   className="rotateSun"
                />
-               <User className="h-[65%] w-[65%]"/>
+               <div className="relative h-64 w-64 ml-2">
+               <Image
+                  unoptimized
+                  loading="lazy"
+                  src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/hridaya.png`}
+                  alt="Thrive Holistic Haridya Mahajan" 
+                  fill
+                  style={{
+                     objectFit: "contain",
+                     zIndex: -5
+                  }}
+               />
+               </div>
               </div>
 
       </section>

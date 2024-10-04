@@ -55,7 +55,7 @@ const WorkshopAndCourseCard = ({ image, title, description, link }: { image: str
           className="text-base font-medium mb-4 text-left h-24"
           text={description}
         />
-        <Link href={link} target="_blank" className="bg-[#FFF622] text-lg py-2 w-full px-4 text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200"> Attend Now</Link>
+        <Link href={link} target="_blank" className="bg-[#FFF622] hover:cursor-custom-hover text-lg py-2 w-full px-4 text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200"> Attend Now</Link>
       </motion.div>
     </motion.div>
   );
@@ -63,13 +63,18 @@ const WorkshopAndCourseCard = ({ image, title, description, link }: { image: str
 
 
 export const WorkshopAndCourses=()=>{
-
    const workshopAndCoursesList = [
       {
         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/cardreading.jpg`,
         title: 'Card Reading',
         description: 'Master the art of Tarot reading, learn card meanings, spreads, and develop your intuition to gain deeper insights and guidance for yourself and others.',
         link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Card%20Reading*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/energy-healing-1.jpeg`,
+        title: 'Energy Healing',
+        description: 'From Headache to Cancer Everything can be cure, be it Physical, Psychological, Emotional, Addicition based and much more...',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Energy%20Healing*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
       },
       {
         image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/oracle-card-reading.jpg`,
@@ -100,10 +105,38 @@ export const WorkshopAndCourses=()=>{
         title: 'Law of Attraction',
         description: 'Master the Law of Attraction, learn manifestation techniques, and discover how to attract abundance, with steps to manifest and the power of detachment.',
         link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Law%20of%20Attraction*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
-      }
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/numerology.png`,
+        title: 'Numerology',
+        description: 'Unlock your destiny with our Numerology service, guiding you to harmony, success, and balance through personalized number insights.',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Numerology*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/energy-healing-level-1.jpeg`,
+        title: 'Energy Healing Level 1',
+        description: 'From Headache to Cancer Everything can be cure, be it Physical, Psychological, Emotional, Addicition based and much more...',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Energy%20Healing%20Level%201*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/energy-healing-level-2.jpeg`,
+        title: 'Energy Healing Level 2',
+        description: 'From Headache to Cancer Everything can be cure, be it Physical, Psychological, Emotional, Addicition based and much more...',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Energy%20Healing%20Level%202*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/crystal-healing.jpeg`,
+        title: 'Energy Healing - Crystal Healing',
+        description: 'From Headache to Cancer Everything can be cure, be it Physical, Psychological, Emotional, Addicition based and much more...',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Energy%20Healing%20-%20Crystal%20Healing*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
+      {
+        image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/workshops/entity-protection.jpeg`,
+        title: 'Energy Healing - Entity Protection',
+        description: 'From Headache to Cancer Everything can be cure, be it Physical, Psychological, Emotional, Addicition based and much more...',
+        link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20attending%20the%20*Energy%20Healing%20-%20Entity%20Protection*%20workshop.%20Could%20you%20please%20share%20the%20availability%20and%20timing%20details?'
+      },
     ];
-
-
 
    return(
       <section className="mx-auto flex items-center flex-wrap gap-10 mt-14 sm:pt-14 justify-center">

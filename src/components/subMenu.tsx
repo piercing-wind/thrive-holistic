@@ -10,7 +10,7 @@ export const SubMenu = ({menuItems,activeIndex ,setActiveIndex}: {menuItems : st
           <li
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`cursor-pointer flex items-center gap-2 ${
+            className={`hover:cursor-custom-hover flex items-center gap-2 ${
               activeIndex === index ? 'border-b-2 border-[#800000] font-medium' : ''
             } hover:border-b-2 hover:border-[#800000]`}
           >

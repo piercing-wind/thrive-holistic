@@ -24,9 +24,9 @@ export const HolisticOffering = () => {
          link: "/services",
       },
       {
-         img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/cards/title-feng-shui-theme-for-home.jpg`,
-         title: "Spiritual Essentials Items",
-         description: "Explore our holistic products designed to enrich your environment, boost energy, and support your journey towards inner peace and balance.",
+         img: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/services/hridayamahajan-card-reading.jpg`,
+         title: "Card Reading",
+         description: "Hridaya Mahajan's Tarot readings at Thrive Holistic offer accurate, personalized insights, providing clarity and guidance for life’s challenges.",
          link: "/services",
       },
      ];

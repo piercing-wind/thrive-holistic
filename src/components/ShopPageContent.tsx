@@ -5,6 +5,7 @@ import { Services } from "./services";
 import { WorkshopAndCourses } from "./workshopAndCourses";
 import { useSearchParams } from "next/navigation";
 import { Sparkle } from 'lucide-react';
+import { Products } from "./products";
 
 export const ShopPageContent = () => {
   const  searchParams = useSearchParams();
@@ -15,7 +16,7 @@ export const ShopPageContent = () => {
   const renderContent = () => {
    switch (activeIndex) {
      case 0:
-       return 'Products';
+       return <Products/>;
      case 1:
        return <Services />;
      case 2:

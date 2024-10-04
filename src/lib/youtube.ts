@@ -1,17 +1,19 @@
-export const getYoutubeVideos = async (uploadsPlaylistId: string, apiKey: string) => {
-   const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=10&key=${apiKey}`;
+'use server'
+export const getChannelIdFromUsername = async (username: string, apiKey: string) => {
+   const url = `https://www.googleapis.com/youtube/v3/channels?part=id&forUsername=${username}&key=${apiKey}`;
    const response = await fetch(url);
    const data = await response.json();
-   if (data.items) {
-     return data.items;
+   console.log(JSON.stringify(data))
+   if (data.pageInfo && data.pageInfo.totalResults > 0) {
+     return data.items[0].id;
    } else {
-     throw new Error("No videos found");
+     console.log(new Error("Channel not found"));
    }
  };
 
-export const getYoutubePlaylists = async (uploadsPlaylistId : string, apiKey : string) => {
+export const getYoutubePlaylists = async (channelId : string, apiKey : string) => {
    try {
-     const playlistsUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50&key=${apiKey}`;
+     const playlistsUrl = `https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=${channelId}&maxResults=50&key=${apiKey}`;
      const response = await fetch(playlistsUrl);
      const data = await response.json();
      console.log(JSON.stringify(data));

@@ -181,3 +181,85 @@
 //   ],
 //   pageInfo: { totalResults: 4, resultsPerPage: 10 },
 // };
+export const playlist = {
+  kind: "youtube#playlistListResponse",
+  etag: "aVz7vwCJs1dYzJ96CHTYqxQkV_Y",
+  pageInfo: { totalResults: 2, resultsPerPage: 50 },
+  items: [
+    {
+      kind: "youtube#playlist",
+      etag: "SXv2czyxSDw8ccK4Ms3PUtxqGiI",
+      id: "PLA3rfefXzxkRAGt3y3cYbHTjBXZ49mHHe",
+      snippet: {
+        publishedAt: "2024-10-03T11:47:55Z",
+        channelId: "UC68K6SZ76gRC_PAkwZDdf9g",
+        title: "Vastu | Fengshui tip",
+        description: "",
+        thumbnails: {
+          default: {
+            url: "https://i.ytimg.com/vi/EkEGAe5I1pQ/default.jpg",
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: "https://i.ytimg.com/vi/EkEGAe5I1pQ/mqdefault.jpg",
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: "https://i.ytimg.com/vi/EkEGAe5I1pQ/hqdefault.jpg",
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: "https://i.ytimg.com/vi/EkEGAe5I1pQ/sddefault.jpg",
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: "https://i.ytimg.com/vi/EkEGAe5I1pQ/maxresdefault.jpg",
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: "Thrive Holistic ",
+        localized: { title: "Vastu | Fengshui tip", description: "" },
+      },
+    },
+    {
+      kind: "youtube#playlist",
+      etag: "99iHA1YqZMTwizNz4erGmunqHFc",
+      id: "PLA3rfefXzxkT5mhp4VmujK7cXYJdxinGI",
+      snippet: {
+        publishedAt: "2024-10-03T11:35:33Z",
+        channelId: "UC68K6SZ76gRC_PAkwZDdf9g",
+        title: "Client review",
+        description: "",
+        thumbnails: {
+          default: {
+            url: "https://i.ytimg.com/vi/qrMcjBaJyUc/default.jpg",
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: "https://i.ytimg.com/vi/qrMcjBaJyUc/mqdefault.jpg",
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: "https://i.ytimg.com/vi/qrMcjBaJyUc/hqdefault.jpg",
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: "https://i.ytimg.com/vi/qrMcjBaJyUc/sddefault.jpg",
+            width: 640,
+            height: 480,
+          },
+        },
+        channelTitle: "Thrive Holistic ",
+        localized: { title: "Client review", description: "" },
+      },
+    },
+  ],
+};

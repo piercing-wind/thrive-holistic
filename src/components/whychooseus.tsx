@@ -16,7 +16,7 @@ export const WhyChooseUs = () => {
    const sections = [
       {
         header: (
-          <h6 className="text-lg md:text-3xl font-semibold flex gap-2 md:gap-8 items-center">
+          <h6 className="hover:cursor-custom-hover text-lg md:text-3xl font-semibold flex gap-2 md:gap-8 items-center">
             <span><NumberTicker value={10} />+ Years of Experience</span>
             <span>{expandedSection === 0 ? <MinusCircle/> : <PlusCircle />}</span>
           </h6>
@@ -29,7 +29,7 @@ export const WhyChooseUs = () => {
       },
       {
         header: (
-          <h6 className="text-xl md:text-3xl font-semibold flex gap-8 items-center">
+          <h6 className="hover:cursor-custom-hover text-xl md:text-3xl font-semibold flex gap-8 items-center">
             <span><NumberTicker value={50000} />+ Happy Clients</span>
             <span>{expandedSection === 1 ? <MinusCircle/> : <PlusCircle />}</span>
           </h6>
@@ -42,7 +42,7 @@ export const WhyChooseUs = () => {
       },
       {
         header: (
-          <h6 className="text-xl md:text-3xl font-semibold flex gap-8 items-center">
+          <h6 className="hover:cursor-custom-hover text-xl md:text-3xl font-semibold flex gap-8 items-center">
             <span>Global Reach</span>
             <span>{expandedSection === 2 ? <MinusCircle/> : <PlusCircle />}</span>
           </h6>
@@ -57,7 +57,7 @@ export const WhyChooseUs = () => {
       },
       {
         header: (
-          <h6 className="text-xl md:text-3xl font-semibold flex gap-8 items-center">
+          <h6 className="hover:cursor-custom-hover text-xl md:text-3xl font-semibold flex gap-8 items-center">
             <span>ISO Certified</span>
             <span>{expandedSection === 3 ? <MinusCircle/> : <PlusCircle />}</span>
           </h6>
@@ -70,7 +70,7 @@ export const WhyChooseUs = () => {
       },
       {
         header: (
-          <h6 className="text-xl md:text-3xl font-semibold flex gap-8 items-center">
+          <h6 className="hover:cursor-custom-hover text-xl md:text-3xl font-semibold flex gap-8 items-center">
             <span>Comprehensive Service</span>
             <span>{expandedSection === 4 ? <MinusCircle/> : <PlusCircle />}</span>
           </h6>

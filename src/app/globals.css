@@ -7,6 +7,7 @@
    color : var(--font-color);
    font-family: var(--font-epilogue), Arial, Helvetica, sans-serif;
    letter-spacing: 0.5px;
+   cursor: url('/cursor-wand.png'), auto;
  }
 
 @layer utilities {
@@ -14,6 +15,9 @@
     text-wrap: balance;
   }
 }
+a:hover, .hover\:cursor-custom-hover:hover {
+   cursor: url('/cursor-hover.png'), auto;
+ }
 
 @layer base {
   :root {
@@ -36,4 +40,53 @@
    color: white;
    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
    -webkit-text-stroke: 1px #800000;
+ }
+
+
+ @keyframes move1 {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(20px, 0); }
+   50% { transform: translate(20px, 20px); }
+   75% { transform: translate(0, 20px); }
+   100% { transform: translate(0, 0); }
+ }
+
+ @keyframes move2 {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(20px, 0); }
+   50% { transform: translate(20px, 20px); }
+   75% { transform: translate(0, 20px); }
+   100% { transform: translate(0, 0); }
+ }
+
+ @keyframes move3 {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(20px, 0); }
+   50% { transform: translate(20px, 20px); }
+   75% { transform: translate(0, 20px); }
+   100% { transform: translate(0, 0); }
+ }
+
+ @keyframes move4 {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(20px, 0); }
+   50% { transform: translate(20px, 20px); }
+   75% { transform: translate(0, 20px); }
+   100% { transform: translate(0, 0); }
+ }
+
+ .animated_icon1 {
+   animation: move1 5s infinite;
+ }
+
+ .animated_icon2 {
+   animation: move2 6s infinite;
+ }
+
+ .animated_icon3 {
+   animation: move3 7s infinite;
+ }
+
+ .animated_icon4 {
+   animation: move4 8s infinite;
  }

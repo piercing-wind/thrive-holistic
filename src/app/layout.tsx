@@ -124,7 +124,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${epilogue.variable} antialiased overflow-x-hidden`}
+        className={`${epilogue.variable} antialiased overflow-x-hidden `}
       >
         {children}
       </body>
