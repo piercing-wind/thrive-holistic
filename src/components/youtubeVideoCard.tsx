@@ -5,15 +5,31 @@ import Modal from "./modal";
 import { PlayCircle } from "lucide-react";
 import Marquee from "./ui/marquee";
 
+interface VideoItem {
+   snippet: {
+     title: string;
+     description: string;
+     thumbnails: {
+       default: {
+         url: string;
+       };
+     };
+     resourceId: {
+       videoId: string;
+     };
+   };
+ }
+ 
+
 const fetchPlaylistVideos = async (playlistId: string, apiKey: string) => {
    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&key=${apiKey}`;
    const response = await fetch(url);
    const data = await response.json();
-   return data.items;
+   return data.items as VideoItem[];
 };
 
-const chunkArray = (array: any[], size: number) => {
-   const chunkedArr = [];
+const chunkArray = (array: VideoItem[], size: number) => {
+   const chunkedArr : VideoItem[][] = [];
    let i = 0;
  
    // Create chunks of the specified size
@@ -30,7 +46,7 @@ const chunkArray = (array: any[], size: number) => {
  
        // Distribute the videos from the last chunk to the previous chunks
        while (lastChunk.length > 0) {
-         chunkedArr[j % chunkedArr.length].push(lastChunk.shift());
+         chunkedArr[j % chunkedArr.length].push(lastChunk.shift() as VideoItem);
          j++;
        }
      }
@@ -67,7 +83,7 @@ const VideoCard = ({ video, videoTitle, src, onClick }: { video: any, videoTitle
 };
 
 export const YoutubeVideoCard = ({ playlistId, title }: { playlistId: string, title: string }) => {
-   const [videos, setVideos] = useState([]);
+   const [videos, setVideos] = useState<VideoItem[]>([]);
    const [isModalOpen, setIsModalOpen] = useState(false);
    const [currentVideoSrc, setCurrentVideoSrc] = useState<string | null>(null);
 
