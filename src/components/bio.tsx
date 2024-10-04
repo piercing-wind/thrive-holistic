@@ -53,7 +53,7 @@ export const Bio=()=>{
               className="text-xl font-medium text-start my-4"
               text="Founder of Thrive Holistic, a holistic healer specializing in Vastu, Feng Shui, energy healing, Crystal Healing, Predictions, Remedies, Card Reading, Counselling Sessions and much more... dedicated to fostering balance and well-being."
             />
-            <Link href='' className="px-5 bg-yellow-50 shadow-md shadow-[#8900006d]  py-1 rounded-sm my-2 hover:scale-105 hover:bg-yellow-200 transition-all duration-150 flex items-center justify-center">Reach Me</Link>
+            <Link href='https://wa.me/919914939308?text=Hi%20Hridaya%2C%20I%20came%20from%20your%20website%20and%20I%20am%20interested%20in%20your%20services' target="_blank" className="px-5 bg-yellow-50 shadow-md shadow-[#8900006d]  py-1 rounded-sm my-2 hover:scale-105 hover:bg-yellow-200 transition-all duration-150 flex items-center justify-center">Reach Me</Link>
          </div>
               <div className="relative h-96 w-96 flex-shrink-0 md:flex items-center justify-center hidden">
                <Image

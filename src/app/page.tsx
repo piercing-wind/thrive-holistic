@@ -46,7 +46,7 @@ export default function Home() {
                  className="text-lg font-medium text-left my-4 mb-8 -z-40"
                  text="Experience the trans formative power of tarot readings. Learn more about yourself and the energies that shape your life’s journey."
                />
-               <Link href="" className="relative flex z-40 items-center justify-center w-48 gap-5 px-8 p-2 bg-[#F2E8C6] shadow-lg my-4 rounded-md font-semibold text-lg text-nowrap hover:scale-105 hover:bg-[#800000] hover:text-[#F2E8C6] transition-all duration-300" ><p>Book Now</p><WhatsAppIcon size={22}/></Link>
+               <Link href="https://wa.me/919914939308?text=Hi%20Hridaya%2C%20I%20came%20from%20your%20website%20and%20I%20am%20interested%20in%20your%20services" target="_blank" className="relative flex z-40 items-center justify-center w-48 gap-5 px-8 p-2 bg-[#F2E8C6] shadow-lg my-4 rounded-md font-semibold text-lg text-nowrap hover:scale-105 hover:bg-[#800000] hover:text-[#F2E8C6] transition-all duration-300" ><p>Book Now</p><WhatsAppIcon size={22}/></Link>
             </div>
             <div className="absolute -bottom-[15rem] sm:-bottom-[70%] left-14 sm:left-[15%] md:left-auto md:bottom-auto md:top-0 md:-right-64 ">
                <div className="relative h-[20rem] w-[20rem] sm:h-[34rem] sm:w-[34rem] md:h-[30rem] md:w-[30rem] lg:h-[34rem] lg:w-[34rem] flex flex-col md:flex-row items-center  ">
