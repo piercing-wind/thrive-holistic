@@ -65,7 +65,8 @@ export const metadata: Metadata = {
    other:{
       ["bingbot"]: "noarchive",
    },
-   
+   abstract : "Thrive Holistic",
+   category : "Holistic Healing",
  };
 
 

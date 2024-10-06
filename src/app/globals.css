@@ -16,12 +16,12 @@
   }
 }
 a:hover, .hover\:cursor-custom-hover:hover {
-   cursor: url('/cursor-hover.png'), auto;
+   cursor: url('/cursor-pointer.png'), auto;
  }
 
-*:hover {
-  cursor: url('/cursor-hover.png'), auto;
-}
+/* *:hover {
+  cursor: url('/cursor-pointer.png'), auto;
+} */
  
 
 @layer base {

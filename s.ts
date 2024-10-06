@@ -1,0 +1,65 @@
+let s = [
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    name: "Ayurheals",
+    url: "https://ayurheals.com",
+    description:
+      "We provide authentic and branded Ayurvedic, Herbal, Siddha, Unani Medicines.",
+    potentialAction: {
+      "@type": "SearchAction",
+      name: "Ayurheals Search",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://ayurheals.com/search?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "#organization",
+      brand: "Ayurheals",
+      contactPoint: {
+        "@type": "ContactPoint",
+        availableLanguage: ["English", "Hindi"],
+        contactType: "customer service",
+        email: "support@ayurheals.com",
+        telephone: "+919828049267",
+      },
+      sameAs: [
+        "https://play.google.com/store/apps/details?id=com.ayurheals",
+        "https://www.facebook.com/ayurheals.official/",
+        "https://twitter.com/ayurheals/",
+        "https://www.instagram.com/ayur.heals/",
+        "https://www.youtube.com/@ayurheals",
+        "https://www.linkedin.com/company/ayurheals/",
+        "https://www.amazon.in/Health-Formula-by-Ayurheals/dp/B0BT9SL7ZY",
+        "https://www.crunchbase.com/organization/ayurheals",
+      ],
+      foundingDate: "2019",
+      foundingLocation: "India",
+      logo: "https://cdn.shopify.com/s/files/1/0632/2421/7779/files/pictorial_black_2x_a55e041b-8c25-422e-ade0-89ed7548f342.webp?v=1695716939",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingCount: "45",
+        reviewCount: "45",
+        ratingValue: "4.6",
+        worstRating: "1",
+        bestRating: "5",
+      },
+      slogan: "Let's reunite with our own roots",
+      taxID: "GSTIN 08AWOPK2911N2Z2",
+      name: "Ayurheals",
+      url: "https://ayurheals.com",
+    },
+    mainEntity: {
+      "@id": "https://ayurheals.com",
+      url: "https://ayurheals.com",
+      name: "Buy Guru Kripa Ayurveda Products \\u0026 Medicine online at Best Price ",
+      description:
+        "Buy a wide range of Guru Kripa Ayurveda Products online. we provide authentic products, fast Delivery \\u0026 Get free shipping on orders over ₹999 .Order now - India's trusted online pharmacy.",
+      isPartOf: { "@id": "https://ayurheals.com#website" },
+      "@type": "CollectionPage",
+    },
+  },
+];

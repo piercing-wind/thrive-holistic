@@ -176,21 +176,39 @@ export const metadata: Metadata = {
    },  
    other:{
       ["bingbot"]: "noarchive",
+      
    },
-   
- };
+   category : "Spirituality",
+   abstract : "Thrive Holistic",
+
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+   const jsonLd = {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Thrive Holistic",
+      "url": "https://www.thriveholistic.com",
+      "description": metadata.description,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Thrive Holistic"
+      }
+    };
   return (
     <html lang="en">
       <body
         className={`${epilogue.variable} antialiased overflow-x-hidden `}
       >
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
