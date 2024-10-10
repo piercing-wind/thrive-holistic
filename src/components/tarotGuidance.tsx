@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FadeText } from "./ui/fade-text";
 import TypingAnimation from "./ui/typing-animation";
 
-export const TarrotGuidance = () => {
+export const TarotGuidance = () => {
    return(
       <section className="w-[95%] xl:w-[80%] mx-auto flex flex-col gap-y-10 md:flex-row mt-20 pt-20 items-center justify-between">
          <div className="px-4 md:px-0 md:w-[60%]">
@@ -24,7 +24,7 @@ export const TarrotGuidance = () => {
             src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotOuter.png`}
             unoptimized 
             loading="lazy"
-            alt="Thrive Holistic Tarrot Guidance"
+            alt="Thrive Holistic Tarot Guidance"
             fill
             style={{
                objectFit: "cover",
@@ -35,7 +35,7 @@ export const TarrotGuidance = () => {
             src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotMiddle.png`}
             unoptimized 
             loading="lazy"
-            alt="Thrive Holistic Tarrot Guidance"
+            alt="Thrive Holistic Tarot Guidance"
             fill
             style={{
                objectFit: "cover",
@@ -45,7 +45,7 @@ export const TarrotGuidance = () => {
             src={`${process.env.NEXT_PUBLIC_WEBSITE_URL}/tarot/tarotInner.png`}
             unoptimized 
             loading="lazy"
-            alt="Thrive Holistic Tarrot Guidance"
+            alt="Thrive Holistic Tarot Guidance"
             fill
             style={{
                objectFit: "cover",

@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 import { HolisticOffering } from "@/components/holisticOffering";
 import { Facebook, InstagramIcon, Linkedin, TwitterIcon, WhatsAppIcon, YoutubeIcon } from "@/components/icons";
 import { MakingLivesbetterSection } from "@/components/makingLivesBetterSection";
-import { TarrotGuidance } from "@/components/tarrotGuidance";
+import { TarotGuidance } from "@/components/tarotGuidance";
 import { FadeText } from "@/components/ui/fade-text";
 import Marquee from "@/components/ui/marquee";
 import OrbitingCircles from "@/components/ui/orbiting-circles";
@@ -130,7 +130,7 @@ export default function Home() {
          <HolisticOffering />
          <WhyChooseUs />
          <FlexibleServiceSection />
-         <TarrotGuidance />
+         <TarotGuidance />
          <MakingLivesbetterSection />
          <Footer />
       </main>
