@@ -40,7 +40,7 @@ export default function Home() {
                  framerProps={{
                    show: { transition: { duration: 1, delay: 0.2 } },
                  }}
-                 text="Transform Your Life with Tarrot Wisdom"
+                 text="Transform Your Life with Tarot Wisdom"
                />
               <TypingAnimation
                  className="text-lg font-medium text-left my-4 mb-8 -z-40"
