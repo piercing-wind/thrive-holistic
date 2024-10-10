@@ -59,7 +59,7 @@ export default function Home() {
                      style={{
                         objectFit: "cover",
                      }}
-                     className=" -z-50"
+                     className=" -z-50 rotateSun"
                   />
     
                   <Link href="https://www.linkedin.com/in/hridaya-mahajan-b26120198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" className="-mt-14 mb-4 md:mt-auto md:mb-auto md:-ml-14 md:mr-16 z-10 animated_icon1 hover:cursor-custom-hover">
