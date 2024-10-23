@@ -26,7 +26,7 @@ export const ShopPageContent = () => {
    }
  };
    return (
-      <section className="w-[95%] lg:w-[80%] mx-auto px-8">
+      <section className="w-[95%] lg:w-[80%] mx-auto px-[1.8rem]">
       <SubMenu 
          menuItems={menuItems}
          activeIndex={activeIndex}

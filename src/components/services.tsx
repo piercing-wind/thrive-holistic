@@ -64,13 +64,13 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, delay: 0.3 }}
          >
-            <h4 className="font-bold text-lg sm:text-2xl">{title}</h4>
+            <h4 className="font-bold text-sm sm:text-2xl text-nowrap">{title}</h4>
             <TypingAnimation  
-               className={`${isHorizontal ? 'text-xs' : 'text-base' } sm:text-base font-medium sm:mb-4 text-left sm:h-24`}
+               className={`${isHorizontal ? 'text-[0.7rem]' : 'text-base' } sm:text-base font-medium sm:mb-4 text-left sm:h-24`}
                text={description}
             />
             <span className="text-sm sm:text-lg font-bold">{price}</span>
-            <Link href={link} target="_blank" className={`bg-[#FFF622] ${isHorizontal? 'py-1': 'py-2'} hover:cursor-custom-hover sm:py-2 w-full px-1 text-xs sm:text-base sm:px-4 text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200`}> Schedule Your Session </Link>
+            <Link href={link} target="_blank" className={`bg-[#FFF622] ${isHorizontal? 'h-6': 'py-2'} hover:cursor-custom-hover sm:py-2 w-full px-1 text-[0.7rem] sm:text-base sm:px-4 text-nowrap shadow-md rounded-full flex items-center justify-center font-semibold hover:bg-opacity-50 transition-all duration-200`}> Schedule Your Session </Link>
          </motion.div>
       </motion.div>
    )
