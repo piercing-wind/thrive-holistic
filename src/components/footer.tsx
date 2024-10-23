@@ -12,7 +12,7 @@ export const Footer=()=>{
               }}
               text="Our Presence"
             />
-         <div className="w-full flex flex-wrap items-start justify-center gap-10 mt-16 text-sm relative">
+         <div className="w-full flex flex-wrap items-center justify-start sm:justify-center px-14 sm:px-0 gap-10 mt-16 text-sm relative">
          <div className="absolute bottom-0 right-10 h-28 w-56 rounded-full bg-red-600 blur-3xl -z-10 opacity-20"/>
          <div className="absolute bottom-0 left-10 h-28 w-28 rounded-full bg-purple-600 blur-3xl -z-10 opacity-30"/>
          <div className="absolute top-0 left-[50%] h-28 w-28 rounded-full bg-pink-600 blur-3xl -z-10 opacity-30"/>

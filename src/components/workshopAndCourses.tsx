@@ -139,7 +139,7 @@ export const WorkshopAndCourses=()=>{
     ];
 
    return(
-      <section className="mx-auto flex items-center flex-wrap gap-10 mt-14 sm:pt-14 justify-center">
+      <section className="mx-auto flex items-center flex-wrap gap-10 mt-14 sm:pt-14 justify-center ">
          {workshopAndCoursesList.map((workshop, index) => (
             <WorkshopAndCourseCard
                key={index}
