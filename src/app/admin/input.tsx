@@ -176,7 +176,7 @@ const RichTextEditor = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='max-w-2xl max-h-fit relative w-full flex-shrink-0  border rounded-md border-neutral-800 '>
+    <form onSubmit={handleSubmit} className='max-w-2xl h-full md::max-h-fit relative w-full flex-shrink-0  border rounded-md border-neutral-800 '>
      <div className='border-b border-red-800'>
       <input
          type="text"

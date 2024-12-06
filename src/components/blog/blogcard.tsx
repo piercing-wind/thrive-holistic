@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ArrowLeftCircleIcon, ArrowRightCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { revalidatePath } from "next/cache";
 
 const BlogCard = ({ blog }: { blog: IBlogPost }) => {
   const { _id, title, description, thumbNail, content, createdAt, author } = blog;
@@ -60,8 +61,8 @@ export const BlogLists =()=>{
    const [blogs, setBlogs] = useState<IBlogPost[]>([]);
    const [page, setPage] = useState(1);
    const [totalPages, setTotalPages] = useState(1);
+   const [loading, setLoading] = useState(true);
    const router = useRouter();
-
    useEffect(() => {
       const fetchBlogs = async () => {
         try {
@@ -70,14 +71,14 @@ export const BlogLists =()=>{
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
-              "Authorization": process.env.NEXT_PUBLIC_API_KEY!
+              "authorization": process.env.NEXT_PUBLIC_API_KEY!
             }
           });
           const data = await response.json();
-          console.log(data);
           const sortedBlogs = (data.blogs || []).sort((a: IBlogPost, b: IBlogPost) => new Date(b.createdAt!).getTime() - new Date(a.createdAt!).getTime());
           setBlogs(sortedBlogs);
           setTotalPages(data.totalPages || 1);
+         setLoading(false);
         } catch (error) {
           console.error('Error fetching blogs:', error);
           setBlogs([]);
@@ -107,7 +108,7 @@ export const BlogLists =()=>{
             <BlogCard key={blog._id} blog={blog} />
           ))
         ) : (
-          <div className="text-center col-span-3">No blogs found</div>
+          <div className="text-center col-span-3">{loading ? "Loading.." : "No blogs found"}</div>
         )}
       </div>
       <div className="flex justify-between items-center mt-8 sm:mt-4">

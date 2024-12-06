@@ -8,13 +8,13 @@ export const BlogsList = () => {
   const [blogs, setBlogs] = useState<IBlogPost[]>([]);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY}/getallblogs?page=${page}&limit=5`, {
-         //  cache: 'no-store',
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -22,9 +22,9 @@ export const BlogsList = () => {
           }
         });
         const data = await response.json();
-        console.log(data);
         setBlogs(data.blogs || []);
         setTotalPages(data.totalPages || 1);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching blogs:', error);
         setBlogs([]);
@@ -67,26 +67,26 @@ export const BlogsList = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-4 w-full">
-      <h1 className="text-3xl font-bold mb-4">List of Blogs</h1>
+    <div className="max-w-4xl mx-auto sm:p-4 w-full">
+      <h1 className="text-3xl font-bold mb-4">Recent Blogs</h1>
       <div className="flex flex-col gap-4 w-full">
         {blogs.length > 0 ? (
           blogs.map(blog => (
             <div key={blog.slug} className="bg-white flex shadow-md rounded-lg overflow-hidden w-full min-h-36 max-h-36 h-full">
-              <Image src={blog.thumbNail} alt={blog.title} height={200} width={180} className="object-contain bg-gray-100" />
+              <Image src={blog.thumbNail} alt={blog.title} height={320} width={180} className="object-contain bg-gray-100" />
               <div className="p-4 w-full flex flex-col justify-between">
-                <h2 className="text-lg font-bold mb-2">{blog.title.length > 40 ? blog.title.substring(0, 40) + '...' : blog.title}</h2>
-                <p className="text-sm"><span className="font-medium text-sm">Posted on</span> : {new Date(blog.createdAt!).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <h2 className="text-xs md:text-lg font-bold mb-2">{blog.title.length > 40 ? blog.title.substring(0, 40) + '...' : blog.title}</h2>
+                <p className="text-xs sm:text-sm"><span className="font-medium text-sm">Posted on</span> : {new Date(blog.createdAt!).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                 <div className="flex space-x-2 mt-auto justify-between">
                   <button
                     onClick={() => router.push(`/admin/${blog._id}`)}
-                    className="px-4 py-1 w-[50%] font-medium bg-blue-500 text-white rounded hover:bg-blue-600"
+                    className=" px-2 text-xs sm:text-base md:px-4 py-1 w-[50%] font-medium bg-blue-500 text-white rounded hover:bg-blue-600"
                   >
                     Edit
                   </button>
                   <button
                     onClick={() => handleDelete(blog._id!)}
-                    className="px-4 py-1 w-[50%] font-medium bg-red-500 text-white rounded hover:bg-red-600"
+                    className="pz-2 text-xs sm:text-base md:px-4 py-1 w-[50%] font-medium bg-red-500 text-white rounded hover:bg-red-600"
                   >
                     Delete
                   </button>
@@ -95,7 +95,7 @@ export const BlogsList = () => {
             </div>
           ))
         ) : (
-          <p>No blogs available</p>
+          <p>{loading ? "Loading..." : "No blogs available"}</p>
         )}
       </div>
       <div className="flex justify-between items-center mt-4">
