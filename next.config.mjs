@@ -16,11 +16,11 @@ const nextConfig = {
          }
       ]
    },
-    reactStrictMode: true,
+   //  reactStrictMode: true,
    //  basePath: isProduction ? '/thrive-holistic' : '',
     output: 'export',
     trailingSlash: true, 
-    assetPrefix: isProduction ? 'https://thriveholistic.in' : '',
+    assetPrefix: isProduction ? 'https://thriveholistic.in/' : '',
 };
 
 
