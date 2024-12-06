@@ -85,7 +85,7 @@ export const Header = () => {
             <li><Link className="hover:cursor-custom-hover" href="/shop?index=1">Services</Link></li>
             <li><Link className="hover:cursor-custom-hover" href="/shop?index=0" onClick={toggleMenu}>Shop</Link></li>
             <li><Link className="hover:cursor-custom-hover" href="/gallery" onClick={toggleMenu}>Gallery</Link></li>
-            {/* <li><Link className="hover:cursor-custom-hover" href="#" onClick={toggleMenu}>Blog</Link></li> */}
+            <li><Link className="hover:cursor-custom-hover" href="/blog" onClick={toggleMenu}>Blog</Link></li>
           </ul>
         </motion.div>
       )}
