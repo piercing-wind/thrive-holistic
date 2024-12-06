@@ -176,7 +176,7 @@ const RichTextEditor = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='max-w-2xl h-full md::max-h-fit relative w-full flex-shrink-0  border rounded-md border-neutral-800 '>
+    <form onSubmit={handleSubmit} className='max-w-2xl mx-auto h-full md:max-h-fit relative w-full flex-shrink-0  border rounded-md border-neutral-800 '>
      <div className='border-b border-red-800'>
       <input
          type="text"
@@ -192,7 +192,7 @@ const RichTextEditor = () => {
          className='w-full mb-4 p-2 max-h-20'
        />
       </div> 
-      <div ref={editorRef} className='max-h-[70vh] border text-lg' />
+      <div ref={editorRef} className=' h-full min-h-[70vh] max-h-[70vh] border text-base' />
       <button type="submit"  className='border rounded-full px-8 py-2 bg-red-700 text-white font-medium'>Save Post</button>
     </form>
   );
