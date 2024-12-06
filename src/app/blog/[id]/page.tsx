@@ -6,20 +6,21 @@ import { IBlogPost } from "../../../../types";
 import { Footer } from "@/components/footer";
 import { ArrowLeft } from "lucide-react";
 
-
 export async function generateStaticParams() {
    const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY}/getallblogs?page=1&limit=8`, {
-       cache: 'force-cache',
-       method: 'GET',
-       headers: {
-         'Content-Type': 'application/json',
-         "Authorization": process.env.NEXT_PUBLIC_API_KEY!
-       }
-     });
-     const data :IBlogPost[] = await response.json();
-   return data.map(({_id})=> _id).slice(0,30)
-
-}
+     cache: 'force-cache',
+     method: 'GET',
+     headers: {
+       'Content-Type': 'application/json',
+       "Authorization": process.env.NEXT_PUBLIC_API_KEY!
+     }
+   });
+   const { blogs }: { blogs: IBlogPost[], totalPages: number, currentPage: number } = await response.json();
+   return blogs.map(({ _id }) => ({
+     id: _id
+   })).slice(0, 8);
+ }
+ 
 
 export async function generateMetadata({ params }: { params: { id: string } }) : Promise<Metadata>{
    const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY!}/getblogpost?id=${params.id}`,{
