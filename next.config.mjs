@@ -17,7 +17,7 @@ const nextConfig = {
       ]
    },
    //  reactStrictMode: true,
-   //  basePath: isProduction ? '/thrive-holistic' : '',
+    basePath: isProduction ? '/thrive-holistic' : '',
     output: 'export',
     trailingSlash: true, 
     assetPrefix: isProduction ? 'https://thriveholistic.in/' : '',
