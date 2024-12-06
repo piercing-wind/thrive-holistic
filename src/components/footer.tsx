@@ -5,7 +5,7 @@ export const Footer=()=>{
    return (
       <section className="w-[95%] mx-auto mt-20 ">
          <FadeText
-              className="text-4xl font-bold ml-20"
+              className="text-4xl font-bold ml-14 sm:ml-20"
               direction="up"
               framerProps={{
                 show: { transition: { duration: 1, delay: 0.2 } },
