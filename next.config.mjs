@@ -14,13 +14,15 @@ const nextConfig = {
             protocol : 'https',
             hostname : 'thriveholistic.in',
          }
-      ]
+      ],
+      unoptimized: true,
    },
+
+
     reactStrictMode: true,
-    basePath: isProduction ? '/thrive-holistic' : '',
     output: 'export',
     trailingSlash: true, 
-    assetPrefix: isProduction ? 'https://thriveholistic.in/' : '',
+    assetPrefix: isProduction ? 'https://thriveholistic.in' : '',
 };
 
 
