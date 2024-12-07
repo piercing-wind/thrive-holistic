@@ -3,6 +3,7 @@ import { IBlogPost } from "../../../types";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { DeleteObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 export const BlogsList = () => {
   const [blogs, setBlogs] = useState<IBlogPost[]>([]);
@@ -10,6 +11,14 @@ export const BlogsList = () => {
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
+
+  const s3Client = new S3Client({
+   region: process.env.NEXT_PUBLIC_AWS_REGION!,
+   credentials: {
+     accessKeyId: process.env.NEXT_PUBLIC_S3_ACCESS_KEY!,
+     secretAccessKey: process.env.NEXT_PUBLIC_S3_SECRET_ACCESS_KEY!,
+   },
+ });
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -47,14 +56,27 @@ export const BlogsList = () => {
       if (!isConfirmed) {
         return;
       }
+      
       setBlogs(blogs.filter(blog => blog._id !== id));
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY}/delete/?id=${id}`, {
+
+      blogs.forEach(async (blog) => {
+         const keys = blog.keys;
+         for (const key of keys) {
+            await s3Client.send(new DeleteObjectCommand({
+               Bucket: process.env.NEXT_PUBLIC_S3_BUCKET_NAME!,
+               Key: key,
+            }));
+         }
+      });
+
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY}/delete?id=${id}`, {
         method: 'DELETE',
         headers: {
-          'Content-Type': 'application/json',
-          "Authorization": process.env.NEXT_PUBLIC_API_KEY!
-        }
+          "authorization": process.env.NEXT_PUBLIC_API_KEY!,
+          "Content-Type": "application/json", 
+        },
       });
+      
       const data = await response.json();
       alert(`Blog deleted successfully ${data.message}`);
       if (data.error) {

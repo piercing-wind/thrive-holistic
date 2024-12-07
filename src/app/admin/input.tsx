@@ -119,6 +119,7 @@ const RichTextEditor = () => {
     e.preventDefault();
     const slug = title.replace(/\s+/g, '-').toLowerCase();
     let thumbNail = '';
+    let keys = [];
     try {
        if (quillRef.current) {
         let updatedContent = quillRef.current.root.innerHTML;
@@ -134,6 +135,7 @@ const RichTextEditor = () => {
            };
            await s3Client.send(new PutObjectCommand(params));
            const imageUrl = `https://dnyvrvurgen90.cloudfront.net/${params.Key}`;
+           keys.push(params.Key);
            updatedContent = updatedContent.replace(base64, imageUrl);
           if(i === 0){
              thumbNail = imageUrl;
@@ -147,7 +149,7 @@ const RichTextEditor = () => {
               'Content-Type': 'application/json',
               'Authorization': process.env.NEXT_PUBLIC_API_KEY!,
             },
-            body: JSON.stringify({title, description, slug, thumbNail, content : updatedContent, author: {name: 'Hridaya', profileImageUrl: "https://thriveholistic.in/hridaya.png"}}),
+            body: JSON.stringify({title, description, slug, keys, thumbNail, content : updatedContent, author: {name: 'Hridaya', profileImageUrl: "https://thriveholistic.in/hridaya.png"}}),
          })
          const res = await response.json();
          if(response.status !== 200){

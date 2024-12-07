@@ -2,6 +2,7 @@ export interface IBlogPost extends Document {
    title: string;
    description: string;
    slug: string;
+   keys : string[];
    thumbNail: string;
    content: string;
    createdAt?: Date;
