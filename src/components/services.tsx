@@ -77,7 +77,7 @@ const ServiceCard = ({image, title, description, price, link, style = 'horizonta
 }
 
 export const Services=()=>{
-   const servicesList=[
+   let servicesList=[
       {
          image: `${process.env.NEXT_PUBLIC_WEBSITE_URL}/vastuShastra.jpg`,
          title: 'Vastu & Fengshui',
@@ -144,7 +144,27 @@ export const Services=()=>{
        }
    ]
 
-
+   const repeatedServiceTemplate = {
+      title: 'Vastu & Fengshui',
+      description: 'Transform your space with Vastu and Feng Shui to enhance harmony, attract positive energy, and foster prosperity.',
+      price: '',
+      link: 'https://wa.me/919914939308?text=Hi%20Hridaya,%20I%20am%20interested%20in%20the%20*Vastu%20and%20Fengshui*%20service.%20Let%20me%20know%20your%20availability.',
+      style: ''
+    };
+  
+    const repeatedServices = [];
+    for (let i = 0; i < 11; i++) {
+      repeatedServices.push({
+        ...repeatedServiceTemplate,
+        image: `/services/services/service${i + 1}.jpeg`
+      });
+    }
+  
+    // Insert the repeated objects after the first two elements
+    servicesList = [
+      ...servicesList,
+      ...repeatedServices,
+    ];
 
 
    return (
