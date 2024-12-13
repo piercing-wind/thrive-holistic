@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { BlogsList } from "@/components/blog/listofblogs";
-const BlogInput = dynamic(() => import("@/app/admin/input"), { ssr: false });
-const ProtectedPage = dynamic(() => import("@/app/admin/protected"), { ssr: false });
+const BlogInput = dynamic(() => import("@/app/_admin/input"), { ssr: false });
+const ProtectedPage = dynamic(() => import("@/app/_admin/protected"), { ssr: false });
 
 export default async function Page() {
   return (

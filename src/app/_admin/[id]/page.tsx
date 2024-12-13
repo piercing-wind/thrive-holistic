@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { IBlogPost } from "../../../../types";
-const BlogEdit = dynamic(() => import("@/app/admin/edit"), { ssr: false });
-const ProtectedPage = dynamic(() => import("@/app/admin/protected"), { ssr: false });
+const BlogEdit = dynamic(() => import("@/app/_admin/edit"), { ssr: false });
+const ProtectedPage = dynamic(() => import("@/app/_admin/protected"), { ssr: false });
 
 export async function generateStaticParams() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_GATEWAY}/getallblogs?page=1&limit=2`, {
