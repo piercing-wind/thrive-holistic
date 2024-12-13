@@ -64,7 +64,7 @@ export const Header = () => {
         <li><Link className="hover:cursor-custom-hover" href="/shop?index=1">Services</Link></li>
         <li><Link className="hover:cursor-custom-hover" href="/shop?index=0">Shop</Link></li>
         <li><Link className="hover:cursor-custom-hover" href="/gallery">Gallery</Link></li>
-        <li><Link className="hover:cursor-custom-hover" href="/blog">Blog</Link></li>
+        {/* <li><Link className="hover:cursor-custom-hover" href="/blog">Blog</Link></li> */}
       </ul>
       <div className="flex items-center justify-center pr-2 md:hidden">
          <AlignLeft size={38} onClick={toggleMenu}/>
