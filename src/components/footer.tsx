@@ -31,13 +31,6 @@ export const Footer=()=>{
                <p><strong>Phone : </strong> +91 9914939308</p>
                <p><strong>Email : </strong> <Link href="mailto:hridaya033@gmail.com">hridaya033@gmail.com</Link></p>
             </div>
-            <div>
-               <p><strong>Address : </strong> Pashim Vihar</p>
-               <p><strong>Pincode : </strong> 110087</p>
-               <p><strong>State : </strong>New Delhi</p>
-               <p><strong>Phone : </strong> +91 9914939308</p>
-               <p><strong>Email : </strong> <Link href="mailto:hridaya033@gmail.com">hridaya033@gmail.com</Link></p>
-            </div>
 
          </div>
          <div className="w-full border-t border-[#800000] text-xs flex items-center justify-center py-4 mt-10">
